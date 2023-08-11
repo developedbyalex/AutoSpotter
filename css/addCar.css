@@ -1,0 +1,68 @@
+body {
+	background-color: #14121b;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #ba89e4;
+	/* Set the text color */
+	overflow: hidden;
+	/* Prevent scrollbars due to particles */
+}
+
+.login-section {
+	margin: 50px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	/* Place the form on top of particles */
+}
+
+.login-section h1 {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 30px;
+	color: transparent;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 15px;
+	background: linear-gradient(to right, #ea98da, #6870f6);
+	-webkit-background-clip: text;
+	background-clip: text;
+	animation: animatedGradient 3s linear infinite, colorChange 3s linear infinite;
+}
+
+.login-form {
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 20px;
+	border-radius: 10px;
+	text-align: left;
+	width: 80%;
+	max-width: 500px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+	/* Place the form on top of particles */
+}
+
+.login-form label,
+.login-form input,
+.login-form button {
+	display: block;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.login-form button {
+	background: linear-gradient(to right, #ea98da, #6433E0);
+}
+
+/* The particles container */
+#particles-js {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	/* Place particles behind the form */
+}
